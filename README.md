@@ -107,7 +107,20 @@ Rust Embedded programming study for AVR
 
 
 ## AVR Rust projects
+* [laris/rust-embedded-study-avr](https://github.com/laris/rust-embedded-study-avr)
+  > Rust Embedded programming study for AVR
+* [avr-rust/avr-config: Retrieve the target CPU frequency at runtime on Rust AVR projects](https://github.com/avr-rust/avr-config)
 * [avr-rust/awesome-avr-rust: A list of useful AVR libraries and cool projects, PRs welcome!](https://github.com/avr-rust/awesome-avr-rust)
+* Rahix [Rahix's Blog](https://blog.rahix.de/)
+  * [Rahix/avr-hal](https://github.com/Rahix/avr-hal)
+    > embedded-hal abstractions for AVR microcontrollers
+  * [Rahix/avr-hal-template: cargo-generate template for avr-hal projects](https://github.com/Rahix/avr-hal-template)
+  * [Rahix/avr-device: Register access crate for AVR microcontrollers](https://github.com/Rahix/avr-device)
+  * [Rahix/atdf2svd: Converter from Atmel's atdf format to CMSIS SVD](https://github.com/Rahix/atdf2svd)
+  * [Write your own Arduino millis() in Rust](https://blog.rahix.de/005-avr-hal-millis/)
+  * [Rahix -> ravedude](https://blog.rahix.de/ravedude/)
+  * [avr-hal/ravedude Rahix/avr-hal](https://github.com/Rahix/avr-hal/tree/main/ravedude)
+    > ravedude is a tool I created to seamlessly run Rust code on AVR microcontrollers with nothing more than the usual cargo run. This is very much inspired by the great cargo-embed tool!
 * [vlisivka/rust-arduino-hello-world](https://github.com/vlisivka/rust-arduino-hello-world)
 * [vlisivka/rust-arduino-blink](https://github.com/vlisivka/rust-arduino-blink)
 * [vlisivka/rapt - Rust-Arduino Pin Tester](https://github.com/vlisivka/rapt)
@@ -121,11 +134,20 @@ Rust Embedded programming study for AVR
   * [Writing an OS in Rust](https://os.phil-opp.com/)
   * [Writing an OS in Rust (First Edition)](https://os.phil-opp.com/edition-1/)
   * [Set Up Rust | Writing an OS in Rust (First Edition)](https://os.phil-opp.com/set-up-rust/)
+* [tsao-chi/avr-water-lamp8: ](https://github.com/tsao-chi/avr-water-lamp8)
+  > avr water lamp 8, base on https://github.com/avr-rust/blink, simple portb gpio + delay
+* https://github.com/tsao-chi/avr-button-lamp8
+  > No code
+* [audioXD/avrflash: ](https://github.com/audioXD/avrflash)
+  > Rust avr flashing utility (Reserved)
+  >
+  > No code
+* [q231950/avr-atmega168-rust](https://github.com/q231950/avr-atmega168-rust)
+  > base on avr-hal
+* [Rust on AVR: Beyond Blinking (12 May 2017)](https://gergo.erdi.hu/blog/2017-05-12-rust_on_avr__beyond_blinking/)
+  * [gergoerdi/chirp8-avr: CHIP-8 implementation in Rust targeting AVR microcontrollers](https://github.com/gergoerdi/chirp8-avr)
 
-### Rust projects
-* [Ashok Jadatharan’s Home - Ashok Jadatharan - Confluence](https://confluence.nvidia.com/pages/viewpage.action?pageId=54274158)
-  * [#cdd-rust Meetups - Ashok Jadatharan - Confluence](https://confluence.nvidia.com/pages/viewpage.action?pageId=786651214)
-  * [Ashok Jadatharan / md2confluence · GitLab](https://gitlab-master.nvidia.com/ajadatharan/md2confluence)
+*
 
 ## Forum and discussion
 * [EmbDev.net ](https://embdev.net/forum/all)
