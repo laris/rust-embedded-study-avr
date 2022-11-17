@@ -18,6 +18,32 @@ Rust Embedded programming study for AVR
 * [Switch lookup tables are not properly placed in program memory · Issue #47 · avr-rust/rust-legacy-fork](https://github.com/avr-rust/rust-legacy-fork/issues/47)
 * [AVR is Harvard architecture · Issue #53 · avr-rust/rust-legacy-fork](https://github.com/avr-rust/rust-legacy-fork/issues/53)
 * search "LPM" about discusvsion
+* [Johannes Wågen @jwagen Aug 13 2020 04:54](https://gitter.im/avr-rust/Lobby?at=5f34571f514c484540a5c61d)
+  > I have not seen any of the avr library crate implement functionality for that, but I might have missed something.
+  > It should be possible to place a string in flash by doing something like:
+  > ```
+  > #[link_section=".progmem"]
+  > pub static my_var2: [u8; 8]  = *b"deadbeef";
+  > ```
+  > As far as reading I am not quite sure. On some devices I think you should be able to just use read_volatile, but with devices with more memory I think a little bit of assembly might be possible.
+  > Take this with a grain of salt as I have not tried it myself.
+
+* [Johannes Wågen @jwagen Aug 13 2020 05:24](https://gitter.im/avr-rust/Lobby?at=5f345e093cf046461e2f5b87)
+  > For the atmega328 I think this should work. I have not tested it but it does compile.
+  > let result;
+  ```
+  let addr = my_var2.as_ptr();
+      unsafe{
+          llvm_asm!(
+              "lpm $0, Z\n\t"
+              : "=r"(result)
+              : "=z"(addr)
+              : "Z"
+              : volatile
+          );
+      }
+  ```
+
 * [Dylan McKay @dylanmckay Sep 26 2017 09:21](https://gitter.im/avr-rust/Lobby?at=59c9ab95b59d55b82338e7e5)
   > Dylan McKay @dylanmckay Sep 26 2017 09:21
   > @neu-rah LLVM is much nicer than GCC in this regard
@@ -147,7 +173,7 @@ Rust Embedded programming study for AVR
 * [Rust on AVR: Beyond Blinking (12 May 2017)](https://gergo.erdi.hu/blog/2017-05-12-rust_on_avr__beyond_blinking/)
   * [gergoerdi/chirp8-avr: CHIP-8 implementation in Rust targeting AVR microcontrollers](https://github.com/gergoerdi/chirp8-avr)
 
-*
+* [kunerd/avr-blink-svd: Proof of concept: generate code for attiny2313 with the help of svd2rust](https://github.com/kunerd/avr-blink-svd)
 
 ## Forum and discussion
 * [EmbDev.net ](https://embdev.net/forum/all)
