@@ -1,5 +1,6 @@
 ## TLSF memory allocator
-
+* [One malloc to rule them all | Hacker News](https://news.ycombinator.com/item?id=603372)
+* 
 * [2004 (PDF) TLSF: A new dynamic memory allocator for real-time systems](https://www.researchgate.net/publication/4080369_TLSF_A_new_dynamic_memory_allocator_for_real-time_systems)
 
 * [2018 Heapless: Dynamic Data Structures without Dynamic Heap Allocator for Rust | Request PDF](https://www.researchgate.net/publication/345599409_Heapless_Dynamic_Data_Structures_without_Dynamic_Heap_Allocator_for_Rust)
