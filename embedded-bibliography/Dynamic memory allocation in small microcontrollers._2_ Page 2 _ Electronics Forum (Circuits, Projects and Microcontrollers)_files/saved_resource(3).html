@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)https://www.electro-tech-online.com/threads/dynamic-memory-allocation-in-small-microcontrollers.140842/page-2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>var inDapIF=true,inGptIF=true;</script></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script>window.dicnf = {};</script><script data-jc="42" data-jc-version="r20200826">(function(){/*  Copyright The Closure Library Authors. SPDX-License-Identifier: Apache-2.0 */ window.viewReq=[];function b(a){var c=new Image;c.src=a.replace("&amp;","&");viewReq.push(c)}function d(a){fetch(a,{keepalive:!0,credentials:"include",redirect:"follow",method:"get",mode:"no-cors"}).catch(function(){b(a)})}window.vu=function(a){window.fetch?d(a):b(a)};}).call(this);</script><script>vu("https://securepubads.g.doubleclick.net/pcs/view?xai\x3dAKAOjss0myFHjL3Zt3ZE0_CUYe1lU6vXZolKyvN4TKF48VN6wBP6n091aNpwUOMeZ9ucV2YLEgn1RGGYJuVnaFRbmnO62aU7HLiopDOz-N32XG7V7ETm4-kCQnZ13I36nucHUlVlWDoOtpo5Q-TBLBlTydlMKDJwgXPD7LCYBO1J28GXN0vBeUk8rTIyF35_1CAf4o-cTgl90cd9Irl4A4m0tBTWtXJp5zZlq9NbwuZpwWSi0VUb_hKs7_JUCLaezV7zvK1XFq3vnUeXnWcBBo1672s5v93jQmtSVxNZJ1WYSbRguA\x26sig\x3dCg0ArKJSzHOlDbyvTETvEAE\x26urlfix\x3d1\x26adurl\x3d")</script><div class="GoogleActiveViewInnerContainer" style="left:0px;top:0px;width:100%;height:100%;position:fixed;pointer-events:none;z-index:-9999;"></div><div style="display:inline" class="GoogleActiveViewElement" data-google-av-cxn="https://pagead2.googlesyndication.com/pcs/activeview?xai=AKAOjst-dYmb9fELdbZvEU5UGukvJLUID1sWMe2qbicPR4nkXybFxeyx498dJ8NXKjrznVjRU35ZMNO47NEXSqep57UOnTVtTTdSjVbj-zowla8&amp;sig=Cg0ArKJSzCpgzflFfqczEAE" data-google-av-adk="3855109308" data-google-av-metadata="la=0&amp;xdi=0&amp;" data-google-av-override="-1" data-google-av-dm="2" data-google-av-immediate="" data-google-av-aid="0" data-google-av-naid="1" data-google-av-slift="" data-google-av-cpmav="" data-google-av-btr="https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssxOuHHRDFzMcH3fgsTKywFwAgqgt0fsLQggoAB2WJ7nZFEvl-BbZXmluTkHnL-KgLZR0JGpNgc11VJdvDWxYOt99M8CbcKHbvHG6c7Wh-nfLkxbbZ41mLN4vuEZbzZzKBTgDAYfXSJyQD_OCXkiH4WE20hwz72EttY_Arc5eDbJwoDNoIw7IQaRfaPCggl-Memr_oSR7m8qYRUPtVGQP5E09ccFA1xhqn7NT94X23sDG_hYtzh2VdCCcfBkvSI_qtBCvkgYai0ew5sYm14YZJOU9nZykrbvCtXlO6S02kTy53J&amp;sig=Cg0ArKJSzHQbC7YJw1YoEAE&amp;urlfix=1&amp;adurl=" data-google-av-itpl="19" data-google-av-rs="4"><style>
+  	#banner { position: relative; margin: 0; padding: 0; width: 300px; height: 90px; background: url(https://wtwh-google-ad-manager.s3.amazonaws.com/search-background.jpg) #ffffff no-repeat; opacity: 1; overflow: hidden; border: 1px solid #000000; box-sizing: border-box;}
+  	#banner .pos   	{ position: absolute; left: 0px; top: 0px; width: 300px; height: 90px; opacity: 1; }
+    #banner #tnum { width: 160px; height: 16px; line-height: 16px; top: 60px; left: 103px; overflow: hidden; font-size: 14px; font-family: Arial, Tahoma; border: none; color: #000000; font-weight: normal;}
+    #banner #btn { background-color: transparent; left: 260px; top: 50px; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;}
+    #banner #bg-exit {cursor: pointer;}
+  </style>
+  <div id="banner">
+  <div class="pos" id="bg-exit"></div>
+    <div class="pos" id="num">
+      <input type="text" name="tnum" id="tnum" class="pos" placeholder=" Part Search" autofocus="">
+	    <div class="pos" id="btn"></div>
+    </div>
+  </div>
+<script>
+    var clickTag = 'https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstum6zeeS0l7tpPdHLuLM7rh7AuENmNiv6dbNNcqEXelEHYXuE5A22bsT1fAh0VzUFqJxI5BLlTVomNVH7bZqKGSGvdRE6mCuQy3oGz53EWqA2UI251qg&sig=Cg0ArKJSzEbzgS8hWoseEAE&urlfix=1&rm_eid=[rm_exit_id]&adurl=https://www.digikey.com/product-search/en?keywords=';
+    var banner = document.getElementById('banner');
+    landingpagetarget = '_blank';
+​
+    var tnum = document.getElementById('tnum'),
+        btn  = document.getElementById('btn');
+​
+    tnum.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode == 13) {
+            btn.click();
+        }
+      });
+​
+      document.getElementById('bg-exit').addEventListener('click', goToURL, false);
+      btn.addEventListener('click', goToURL, false);
+    function goToURL(){
+      console.log(clickTag+tnum.value);
+      window.open(clickTag+tnum.value, landingpagetarget);
+    }
+</script></div><script src="./osd_listener.js"></script><script type="text/javascript">osdlfm(-1,'','BBgCzBnBKX7feI9TU8QXo_Z3YCQAAAAAQATgByAEJwAIC4AIA4AQBoAYg0ggFCIBhEAE','',3855109308,true,'la\x3d0\x26xdi\x3d0\x26',3,'CAASEuRoVEABRtZ-y5U5r6TCONNB9Q','https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjst-dYmb9fELdbZvEU5UGukvJLUID1sWMe2qbicPR4nkXybFxeyx498dJ8NXKjrznVjRU35ZMNO47NEXSqep57UOnTVtTTdSjVbj-zowla8\x26sig\x3dCg0ArKJSzCpgzflFfqczEAE','');</script><div style="bottom:0;right:0;width:300px;height:90px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:pixelated !important;z-index:2147483647;background-image:url(&#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB7SURBVBjTbZABDsAgDALpD/j/a40ttDWbLiZEijeA/xW1Poqpqc8qrgO10Sod5HKX6nsf7XY2l/Lb2g9XOcwhUsgvX4wxkzP8klCXiotkgbPpTFKjwo3xBzZIcVDJwy27H/J/cQohVoMz8DRofGA1PM3gaZDGruxucE8f1MgFPJRwFEIAAAAASUVORK5CYII=&#39;) !important;"></div></body></html>

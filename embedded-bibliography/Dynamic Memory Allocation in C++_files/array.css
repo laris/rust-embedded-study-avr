@@ -1,0 +1,45 @@
+/**
+ * The stylesheet for arrays
+ *
+ * @author  David Bernstein
+ * @version 1.0
+ */
+/*
+TABLE.array {
+      background-color: #EEEEFF;
+      border-color: #FFFFFF;
+      border:solid;
+      border-width: 0.1pt;
+      border-collapse:collapse;
+}
+
+
+
+TD.array {
+    background-color: #EEEEFF;
+    border-color: #FFFFFF;
+    border:solid;
+    border-width: 0.1pt;
+}
+*/
+
+
+table.array {
+      background-color: #EEEEFF;
+      border-color: #FFFFFF;
+      border:solid;
+      border-width: 0.1pt;
+      border-collapse:collapse;
+}
+
+
+
+td.array {
+    background-color: #EEEEFF;
+    border-color: #FFFFFF;
+    border:solid;
+    border-width: 0.1pt;
+    width: 3em;
+}
+
+
