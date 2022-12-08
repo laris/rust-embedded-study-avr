@@ -1,4 +1,5 @@
 ## TLSF memory allocator
+* [TLSF | <none>](http://www.gii.upv.es/tlsf/)
 * [One malloc to rule them all | Hacker News](https://news.ycombinator.com/item?id=603372)
 * [具有O(1)时间复杂度的tlsf内存管理算法分享 - 编程语言 - 硬汉嵌入式论坛 - Powered by Discuz!](https://www.rtosfans.com/forum.php?mod=viewthread&tid=111021&highlight=TLSF)
   > 刚刚测试了下，具体的参数如下：
@@ -15,7 +16,11 @@
 
 * [我来发点技术资料——TLSF内存分配算法，适合RTOS使用 (amobbs.com 阿莫电子论坛)](https://www.amobbs.com/forum.php?mod=viewthread&tid=5544900)
 
+* [LiteOS内存管理：TLSF算法 - 简书](https://www.jianshu.com/p/01743e834432)
+  * [Dynamic Memory Allocate(动态内存分配)_Snail_Walker的博客-CSDN博客](https://blog.csdn.net/c602273091/article/details/53576494)
+  * https://pdfs.semanticscholar.org/31da/f60a6c47c1bf892a2c4b76e4bb7c1cf83b58.pdf
 * [rmind/tlsf: TLSF: two-level segregated fit O(1) allocator](https://github.com/rmind/tlsf)
+* [mattconte/tlsf: Two-Level Segregated Fit memory allocator implementation.](https://github.com/mattconte/tlsf)
 
 * [2004 (PDF) TLSF: A new dynamic memory allocator for real-time systems](https://www.researchgate.net/publication/4080369_TLSF_A_new_dynamic_memory_allocator_for_real-time_systems)
 
