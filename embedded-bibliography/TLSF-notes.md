@@ -15,7 +15,7 @@
 * [分享一个实时系统动态内存算法TLSF - uCOS & uCGUI & emWin & embOS & TouchGFX & ThreadX - 硬汉嵌入式论坛 - Powered by Discuz!](https://www.rtosfans.com/forum.php?mod=viewthread&tid=91606&highlight=TLSF)
 
 * [我来发点技术资料——TLSF内存分配算法，适合RTOS使用 (amobbs.com 阿莫电子论坛)](https://www.amobbs.com/forum.php?mod=viewthread&tid=5544900)
-
+* [TLSF 内存分配算法详解_pwl999的博客-CSDN博客_tlsf](https://blog.csdn.net/pwl999/article/details/118253758)
 * [LiteOS内存管理：TLSF算法 - 简书](https://www.jianshu.com/p/01743e834432)
   * [Dynamic Memory Allocate(动态内存分配)_Snail_Walker的博客-CSDN博客](https://blog.csdn.net/c602273091/article/details/53576494)
   * https://pdfs.semanticscholar.org/31da/f60a6c47c1bf892a2c4b76e4bb7c1cf83b58.pdf

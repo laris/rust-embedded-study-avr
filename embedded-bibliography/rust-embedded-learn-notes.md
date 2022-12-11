@@ -4,7 +4,7 @@
 - [LLVM ERROR: Not supported instr · Issue #124 · Rahix/avr-hal](https://github.com/Rahix/avr-hal/issues/124)
 - `rustup toolchain install nightly-2021-01-07` `cargo +nightly-2021-01-07 build`
   ```
-  cat rust-toolchain.toml                                                                                                 (base)
+  cat rust-toolchain.toml
   [toolchain]
   channel = "nightly"
   #channel = "nightly-2021-01-07"
@@ -35,7 +35,7 @@
 ```
 > rustc --print target-list | grep avr
 avr-unknown-gnu-atmega328
-[22:27:51] laris@MBP-P5750 /Users/laris/coding/rust-embedded/try8
+[22:27:51] laris@MBP /Users/laris/coding/rust-embedded/try8
 > rustc --print target-list | grep thumb
 thumbv4t-none-eabi
 thumbv6m-none-eabi
@@ -195,7 +195,7 @@ error: requires `sized` lang_item
 For more information about this error, try `rustc --explain E0463`.
 warning: `try8` (bin "try8") generated 1 warning
 error: could not compile `try8` due to 4 previous errors; 1 warning emitted
-[08:50:29] laris@MBP-P5750 /Users/laris/coding/rust-embedded/try8 [101]
+[08:50:29] laris@MBP /Users/laris/coding/rust-embedded/try8 [101]
 
 > cargo build --target avr-atmega328p.json -Zbuild-std=core
   Downloaded object v0.26.2 (registry `tuna`)
@@ -235,10 +235,10 @@ error: aborting due to previous error
 error: could not compile `try8`
 
 To learn more, run the command again with --verbose.
-[08:55:46] laris@MBP-P5750 /Users/laris/coding/rust-embedded/try8 [101]
+[08:55:46] laris@MBP /Users/laris/coding/rust-embedded/try8 [101]
 > grep edition Cargo.toml
 edition = "2018"
-[08:56:02] laris@MBP-P5750 /Users/laris/coding/rust-embedded/try8
+[08:56:02] laris@MBP /Users/laris/coding/rust-embedded/try8
 ```
 
 
@@ -256,7 +256,7 @@ cargo 1.57.0 (b2e52d7ca 2021-10-21)
 
 > rustc -V
 rustc 1.57.0 (f1edd0429 2021-11-29)
-[18:34:33] laris@MBP-P5750 /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
+[18:34:33] laris@MBP /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
 
 > rustup override set nightly
 info: using existing install for 'nightly-x86_64-apple-darwin'
@@ -269,7 +269,7 @@ info: you may remove overrides for non-existent directories with
 
 > rustup override unset
 info: override toolchain for '/Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary' removed
-[18:42:45] laris@MBP-P5750 /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
+[18:42:45] laris@MBP /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
 > rustup override list |grep (pwd)
 info: you may remove overrides for non-existent directories with
 `rustup override unset --nonexistent`
@@ -309,7 +309,7 @@ error: language item required, but not found: `eh_personality`
 error: `#[panic_handler]` function required, but not found
 
 error: could not compile `phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary` due to 3 previous errors
-…5:47] laris@MBP-P5750 /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary [101]
+…5:47] laris@MBP /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary [101]
 >
 ```
 
@@ -372,7 +372,7 @@ error: could not compile `phil-opp_write-an-os-in-rust_01_a-freestanding-rust-bi
 ### cargo build debug/dev and release option
 ```
 > cargo clean
-[18:21:20] laris@MBP-P5750 /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
+[18:21:20] laris@MBP /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
 
 > cargo build
    Compiling phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary v0.1.0 (/Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary)
@@ -383,7 +383,7 @@ error: could not compile `phil-opp_write-an-os-in-rust_01_a-freestanding-rust-bi
 CACHEDIR.TAG debug
 
 > cargo clean
-[18:21:34] laris@MBP-P5750 /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
+[18:21:34] laris@MBP /Users/laris/coding/rust-embedded/phil-opp_write-an-os-in-rust_01_a-freestanding-rust-binary
 > ls
 Cargo.lock Cargo.toml src
 
@@ -879,7 +879,7 @@ host: x86_64-apple-darwin
 libgit2: 1.3.0 (sys:0.13.23 vendored)
 libcurl: 7.64.1 (sys:0.4.49+curl-7.79.1 system ssl:(SecureTransport) LibreSSL/2.8.3)
 os: Mac OS 11.6.0 [64-bit]
-[08:57:40] laris@MBP-P5750 /Users/laris/coding/rust-embedded
+[08:57:40] laris@MBP /Users/laris/coding/rust-embedded
 
 > rustc -vV
 rustc 1.57.0 (f1edd0429 2021-11-29)
@@ -1696,7 +1696,7 @@ To learn more, run the command again with --verbose.
 #[no_mangle]
 pub extern "C" fn exit() { }
 
-[15:07:19] laris@MBP-P5750 /Users/laris/coding/rust-embedded/avr-scratch-00 [101]
+[15:07:19] laris@MBP /Users/laris/coding/rust-embedded/avr-scratch-00 [101]
 > cargo clean; cargo +nightly-2021-01-07 build  && avr-objdump -dz target/avr-unknown-gnu-atmega328/debug/avr-scratch-00.elf
    Compiling core v0.0.0 (/usr/local/rust/rustup/toolchains/nightly-2021-01-07-x86_64-apple-darwin/lib/rustlib/src/rust/library/core)
    Compiling compiler_builtins v0.1.36
